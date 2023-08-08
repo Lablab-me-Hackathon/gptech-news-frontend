@@ -23,18 +23,9 @@ function Header() {
         }}
       >
         <Menu />
-        <div className="absolute top-20 left-0 bg-gray-950 flex-box flex-col pb-3 w-full z-40">
-          {menuOpen ? (
-            <>
-              {" "}
-              <MenuItems /> <Sign />
-            </>
-          ) : (
-            ""
-          )}
-        </div>
-      </div>
 
+      </div>
+      
     </div>
   );
 }
