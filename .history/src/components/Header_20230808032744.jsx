@@ -25,7 +25,7 @@ function Header() {
         <Menu />
 
       </div>
-      <div className="absolute top-20 left-0 bg-gray-950 flex-box flex-col pb-3 w-full z-40">
+      <div className="absolute top-20 left-0 bg-gray-950 flex-box flex-col  w-full z-40">
         {menuOpen ? (
           <>
             {" "}
