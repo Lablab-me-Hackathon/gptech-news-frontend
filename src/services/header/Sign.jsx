@@ -1,15 +1,20 @@
-import { LogIn } from "lucide-react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
-function Sign() {
+function Sign({ isRegister }) {
   const navigate = useNavigate();
 
   return (
-    <div onClick={() => navigate("/sign-up")} className="flex-box w-40 h-12 cursor-pointer uppercase text-center">
-      <div className="px-3 py-3.5 text-white bg-gray-400 bg-opacity-25 rounded justify-start items-start inline-flex hover:bg-white hover:text-blue-900">
-        <div className="flex-box text-base font-semibold leading-tight  ">
-          Sign up &nbsp;
-          <LogIn />
+    <div
+      onClick={() => navigate(isRegister ? "/sign-up" : "/log-in")}
+      className="flex-box cursor-pointer uppercase text-center"
+    >
+      <div
+        className={`px-1 py-3.5 text-white bg-opacity-25 rounded justify-start items-start inline-flex ${
+          isRegister ? "" : ""
+        }`}
+      >
+        <div className="flex-box text-base menu-item">
+          {isRegister ? "Register" : "Log In"} {/* <LogIn /> */}
         </div>
       </div>
     </div>
