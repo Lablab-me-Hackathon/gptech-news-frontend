@@ -8,7 +8,7 @@ function Article() {
   const getArticles = async () => {
     try {
       // const res = await axios.get('http://localhost:4000/')
-      const res = await axios.get('https://gptech-news.onrender.com')
+      const res = await axios.get('https://gptech-news.onrender.com/feed')
       setArticles(res.data)
     } catch (error) {
       console.log(error)
