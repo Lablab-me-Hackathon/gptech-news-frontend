@@ -1,44 +1,23 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
-import Feed from "./Feed";
+import { useState } from "react";
+import { faq } from "../../data";
 
 function Article() {
-  const [articles, setArticles] = useState([]);
-  // console.log(articles);
-  const getArticles = async () => {
-    try {
-      // const res = await axios.get('http://localhost:4000/')
-      const res = await axios.get("https://gptech-news.onrender.com");
-      setArticles(res.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-  useEffect(() => {
-    getArticles();
-  }, []);
-  const [faqs, setFaqs] = useState([
-    { question: "Question 1", answer: "Answer 1" },
-    { question: "Question 2", answer: "Answer 2" },
-    { question: "Question 3", answer: "Answer 3" },
-    // Add more questions and answers as needed
-  ]);
+  const [faqs, setFaqs] = useState(faq);
   const toggleFAQ = (index) => {
     const newFaqs = [...faqs];
     newFaqs[index].show = !newFaqs[index].show;
     setFaqs(newFaqs);
   };
   return (
-    <section className="text-center py-10">
+    <section className="text-center py-10 w-full">
       <h1 className="text-2xl font-semibold mb-6 text-white">
         Frequently Asked Questions
       </h1>
-      <div className="space-y-4">
+      <div className=" w-full  flex justify-center items-start gap-10 flex-wrap">
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className={`bg-white p-4 rounded-lg shadow-md transition-all ${
-              faq.show ? "max-h-[10rem]" : "max-h-12"
+            className={`bg-white p-4 rounded-lg shadow-md transition-all text-black w-[30%] 
             }`}
           >
             <button

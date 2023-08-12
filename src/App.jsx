@@ -5,7 +5,6 @@ import Faq from "./routes/FAQ";
 import Articles from "./routes/Articles";
 import About from "./routes/About";
 import SignUp from "./routes/SignUp";
-import Login from "./routes/Login";
 import Contact from "./routes/Contact";
 
 function App() {

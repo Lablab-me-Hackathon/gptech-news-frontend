@@ -1,6 +1,13 @@
 // import AkhmimImg from '/team/akhmim.webp';
 const team = [
   {
+    name: "Abdelilah Akhmim",
+    job: "AI & ICT Engineering Student",
+    image: "/assets/team/6.jpg",
+    linkedIn: "http://linkedin.com/in/akhmim-abdelilah",
+    github: "http://github.com/BrightProgrammer7",
+  },
+  {
     name: "Mareya Alrebh",
     job: "MIS Student",
     image: "/assets/team/3.jpg",
@@ -32,12 +39,6 @@ const team = [
       "https://www.linkedin.com/in/mohammed-malek-alkhodary-47a763243/?originalSubdomain=tr",
     github: "https://github.com/Y7gn",
   },
-  {
-    name: "Abdelilah Akhmim",
-    job: "AI & ICT Engineering Student (ENSAJ)",
-    image: "/assets/team/6.jpg",
-    linkedIn: "http://linkedin.com/in/akhmim-abdelilah",
-    github: "http://github.com/BrightProgrammer7",
-  },
+  
 ];
 export default team;

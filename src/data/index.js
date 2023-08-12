@@ -1,3 +1,4 @@
 import team from "./team";
 import articles from "./articles";
-export { team, articles };
+import faq from "./faq";
+export { team, articles, faq };
