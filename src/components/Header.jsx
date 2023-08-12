@@ -10,7 +10,7 @@ function Header() {
     color: "rgba(124, 124, 124, 1)",
   };
   return (
-    <div className="bg-black flex-box px-[95px] sm:flex-row lg:flex-row  justify-between w-full py-5 text-center h-fit ">
+    <div className="bg-black flex-box px-[95px] sm:flex-row lg:flex-row  justify-between w-full py-5 text-center min-h-[140px] ">
       <Logo />
       {/* <div className="hidden md:block"></div> */}
       <div className="hidden md:flex h-fit items-center">
