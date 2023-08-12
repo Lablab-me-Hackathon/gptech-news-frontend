@@ -8,10 +8,10 @@ function About() {
     <div className="flex-box flex-col">
       <Header />
       <div className="text-center text-white h-full w-full py-10 flex-box flex-col scroll-smooth bg-gray-900">
-        <h1 className="text-6xl py-10">About us</h1>
+        <h1 className="text-6xl py-10 font-Syne">About us</h1>
         <Card />
       </div>
-      <div className="text-center text-white h-full w-full py-10 flex-box flex-col scroll-smooth bg-gray-900">
+      <div className="text-center text-white h-full w-full py-10 flex-box flex-col scroll-smooth bg-gray-900 flex flex-wrap">
         <Team />
       </div>
       <Footer />

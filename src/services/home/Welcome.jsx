@@ -1,4 +1,4 @@
-// import Explore from "./Explore";
+import HomeButton from "./HomeButton";
 
 function Welcome() {
   return (
@@ -7,18 +7,17 @@ function Welcome() {
         <div className="text-center overflow-hidden w-full py-10 flex-box flex-col scroll-smooth">
           <div className="flex-box w-full overflow-hidden">
             <div className="flex-box">
-              <div className="px-6 text-center text-white md:px-12">
-                <h1 className="mb-6 text-5xl md:text-6xl lg:text-8xl font-bold drop-shadow-lg  shadow-blue-600/50">
-                  GPTechNews
-                </h1>
-                <h3 className="text-3xl font-bold md:text-4xl lg:text-5xl leading-relaxed md:leading-snug mb-2 drop-shadow-md  shadow-black">
-                  IT News : Grow your career
-                </h3>
-                <p className="text-sm md:text-base text-gray-50 drop-shadow-sm  shadow-black  		">
-                  Explore your favorite news and register now to stay up-to-date
-                  and discover exciting articles.
+              <div className="px-6 text-center text-white md:px-12 font-Bruno">
+                <p className="mb-6 lg:text-4xl font-bold drop-shadow-lg  shadow-blue-600/50  text-Bruno text-altLogo">
+                  Welcome <br /> in
                 </p>
-                {/* <Explore /> */}
+                {/* <h3 className="text-3xl font-bold md:text-4xl lg:text-5xl leading-relaxed md:leading-snug mb-2 drop-shadow-md  shadow-black">
+                  IT News : Grow your career
+                </h3> */}
+                <p className="text-sm md:text-base text-firstLogo drop-shadow-sm  shadow-black">
+                  GPT<span className="text-altLogo">echNews</span>
+                </p>
+                <HomeButton />
               </div>
             </div>
           </div>

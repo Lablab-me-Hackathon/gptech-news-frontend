@@ -1,2 +1,3 @@
-import team from './team';
-export {team};
+import team from "./team";
+import articles from "./articles";
+export { team, articles };

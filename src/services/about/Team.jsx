@@ -3,25 +3,48 @@ import { team } from "../../data";
 
 function Team() {
   return (
-    <div className="scroll-tap font-bold">
+    <div className=" font-bold">
       <h2 className="flex-box text-7xl font-extrabold pb-16 text">Our Team</h2>
-      <ul className="flex-box flex-col divide-y divide-gray-200">
+
+      <ul className="flex-box flex-row flex-wrap px-[100px] w-full">
         {team.map((person, index) => (
-          <li key={index} className="flex-box flex-none p-3 py-4 flex-col">
-            <img className="rounded-full w-44 h-44 border-white border-2" src={person.image} alt="img" />
+          <li
+            key={index}
+            className="flex-box flex-none p-3 py-4 flex-col w-[30%]"
+          >
+            <img
+              className="rounded-full w-44 h-44 "
+              src={person.image}
+              alt="img"
+            />
             <div className="ml-3 flex-box flex-col">
               <p className="text-2xl font-medium text-blue-300">
                 {person.name}
               </p>
               <p className="p-3 text-blue-700 text-sm">{person.job}</p>
               <div className="flex-box">
-                <div className="border-black bg-blue-900 cursor-pointer p-2 m-1 rounded-full hover:bg-blue-300">
-                  <a className="text-blue-200 hover:text-blue-900" href={person.linkedIn}>
+                <div
+                  className={`border-black bg-blue-900 cursor-pointer p-2 m-1 rounded-full hover:bg-blue-300  ${
+                    !person.linkedIn && "hidden"
+                  }`}
+                >
+                  <a
+                    className="text-blue-200 hover:text-blue-900"
+                    href={person.linkedIn}
+                  >
                     <Linkedin />
                   </a>
                 </div>
-                <div className="border-black bg-blue-900 cursor-pointer p-2 m-1 rounded-full hover:bg-blue-300">
-                  <a className="text-blue-200 hover:text-blue-900" href={person.github}>
+
+                <div
+                  className={`border-black bg-blue-900 cursor-pointer p-2 m-1 rounded-full hover:bg-blue-300 ${
+                    !person.github && "hidden"
+                  } `}
+                >
+                  <a
+                    className="text-blue-200 hover:text-blue-900"
+                    href={person.github}
+                  >
                     <Github />
                   </a>
                 </div>
