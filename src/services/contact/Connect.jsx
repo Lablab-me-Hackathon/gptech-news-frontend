@@ -27,7 +27,7 @@ function Connect() {
         </div>
 
         <div className="py-1 w-52 text-gray-500 text-base font-normal underline leading-normal">
-          gptech.news@gmail.com
+          news.gptech@gmail.com
         </div>
       </div>
     </div>
