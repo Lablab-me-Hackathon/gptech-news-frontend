@@ -15,7 +15,7 @@ This web application utilizes the ReactJS framework for the frontend and the Exp
 To install this application, you must first clone the repository on your computer:
 
 ```bash
-git clone https://github.com/Lablab-me-Hackathon/gptech-news-frontend.git
+  git clone https://github.com/Lablab-me-Hackathon/gptech-news-frontend.git
 ```
 
 Once you have cloned the repository, move it to the "gptech-news-frontend" folder.
@@ -28,7 +28,7 @@ Run the following command:
 To install this application, you must first clone the repository on your computer
 
 ```bash
-git clone https://github.com/Lablab-me-Hackathon/gptech-news-backend.git
+  git clone https://github.com/Lablab-me-Hackathon/gptech-news-backend.git
 ```
 
 Once you have cloned the repository, move it to the "gptech-news-backend" folder.
