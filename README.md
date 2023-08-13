@@ -55,5 +55,5 @@ From here, you can navigate between the different pages by clicking on the corre
 
 ## Support
 
-For support, email gptech.news@gmail.com or phone number: +212 5 00 00 00 00.
+For support, email news.gptech@gmail.com or phone number: +212 5 00 00 00 00.
 
