@@ -9,7 +9,7 @@ const Contact = () => {
       </div>
       <div className="flex flex-col text-secondText">
         <p className="font-semibold	">How can we help?</p>
-        <p className="m-1">+971 50 000 0000</p>
+        <p className="m-1">+212 50 000 0000</p>
         <p>news.gptech@gmail.com</p>
       </div>
     </div>
